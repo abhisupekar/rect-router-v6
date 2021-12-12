@@ -20,8 +20,8 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/myapps" element={<Navigate replace to="/learn" />} />
-      <Route path="/learn" element={<Learn />}>
-        <Route path="/courses" element={<Courses />}>
+      <Route path="learn" element={<Learn />}>
+        <Route path="courses" element={<Courses />}>
           <Route path=":courseid" element={<CourseId />} />
         </Route>
         <Route path="bundles" element={<Bundles />} />
